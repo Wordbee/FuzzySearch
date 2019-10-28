@@ -102,6 +102,7 @@ extend(
     remove: function(index) {
       this.source.splice(index, 1);
       this.index.splice(index, 1);
+      this.nb_indexed--;
     },
 
     /**
