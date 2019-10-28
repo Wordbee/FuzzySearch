@@ -102,6 +102,7 @@ extend(
     remove: function(index) {
       this.source.splice(index, 1);
       this.index.splice(index, 1);
+      this.options.source.splice(index, 1);
     },
 
     /**
@@ -168,7 +169,7 @@ FuzzySearch.generateFields = function(obj, fieldlist) {
 };
 
 /**
- * Traverse an object structureuh to collect item specified by parts.
+ * Traverse an object structur to collect item specified by parts.
  * If leaf node is an array or dictionary collect every children.
  * If key is wildcard '*' branch out the search process on each children.
  *
