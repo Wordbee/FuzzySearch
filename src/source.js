@@ -168,7 +168,7 @@ FuzzySearch.generateFields = function(obj, fieldlist) {
 };
 
 /**
- * Traverse an object structure to collect item specified by parts.
+ * Traverse an object structureuh to collect item specified by parts.
  * If leaf node is an array or dictionary collect every children.
  * If key is wildcard '*' branch out the search process on each children.
  *
